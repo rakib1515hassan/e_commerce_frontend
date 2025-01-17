@@ -32,3 +32,21 @@ Using npm:
 
 ```bash
 npm install axios
+```
+
+## Install React Icon
+
+Using npm:
+
+```bash
+npm i react-icons
+```
+
+## Install Toaster
+
+Using npm:
+
+```bash
+npm i react-toastify
+```
+
