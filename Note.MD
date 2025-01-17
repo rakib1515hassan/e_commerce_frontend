@@ -11,3 +11,13 @@ Use the following command to create a new Next.js project:
 ```bash
 npx create-next-app@latest your-project-name
 ```
+
+
+## Axios Installation Guide
+
+To install Axios in your Next.js or any Node.js project, you can use npm or yarn.
+
+Using npm:
+
+```bash
+npm install axios
