@@ -12,6 +12,16 @@ Use the following command to create a new Next.js project:
 npx create-next-app@latest your-project-name
 ```
 
+## Component Boylar plate create 
+
+For Named Export,
+```bash
+rafc + Enter
+```
+
+For Default Export,
+```bash
+rafce + Enter
 
 ## Axios Installation Guide
 
