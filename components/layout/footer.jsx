@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-const footer = () => {
+const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white py-6 mt-10 w-full">
             <div className="container mx-auto px-6">
@@ -40,4 +40,4 @@ const footer = () => {
     )
 }
 
-export default footer
+export default Footer
