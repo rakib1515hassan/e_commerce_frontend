@@ -1,15 +1,14 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-
+import NavbarComponent from "@/components/layout/NavbarLayout";
+import FooterComponent from "@/components/layout/FooterLayout";
 
 export default function HomeLayout({ children }) {
   return (
     <div className="h-screen flex flex-col justify-between">
-      <Navbar />
-      <div className="flex-1">
-        {children}
-      </div>
-      <Footer />
+        <NavbarComponent />
+
+        <div className="flex-1">{children}</div>
+
+        <FooterComponent />
     </div>
   );
 }
