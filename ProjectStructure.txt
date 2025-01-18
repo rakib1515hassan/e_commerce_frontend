@@ -1,0 +1,23 @@
+app/
+├── assets/                 # All static assets like images, fonts, etc.
+│   └── img/
+│   
+├── components/             # Reusable UI components (e.g., buttons, cards)
+│   └── MyAllComponent.jsx  # All component
+│   
+├── pages/                  # All the page components for routing
+│   ├── home/               # Home-related pages (if you have a home page)
+│   │   └── page.jsx        # Home page component
+│   ├── products/           # Product list and product details pages
+│   │   ├── page.jsx        # Product list page (`/products`)
+│   │   └── [id]/           # Dynamic routing for individual product
+│   │       └── page.jsx    # Product details page (`/products/:id`)
+│   └── not-found.jsx       # 404 Page for unhandled routes
+│   
+├── services/               # Services to interact with APIs or business logic
+│   └── productService.js   # API calls for products (fetching, etc.)
+│   
+├── layout.jsx              # Root layout (Shared layout for all pages)
+├── not-found.jsx           # Global 404 page (optional)
+├── page.jsx                # Root page (main landing page)
+└── next.config.js          # Next.js configuration file
