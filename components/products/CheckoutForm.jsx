@@ -1,16 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
 import { postData } from '@/lib/axios';
-import { toast } from 'react-toastify';
 
 const CheckoutForm = ({ totalAmount }) => {
     const stripe = useStripe();
     const elements = useElements();
 
     const [isProcessing, setIsProcessing] = useState(false);
+    const [email, setEmail] = useState('');
     const [error, setError] = useState(null);
 
     const handleSubmit = async (e) => {
@@ -25,17 +26,9 @@ const CheckoutForm = ({ totalAmount }) => {
 
         try {
             // Step 1: Request a PaymentIntent from the backend
-            // const response = await fetch("http://127.0.0.1:8000/api/v1/payments/create-payment-intent/", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "application/json",
-            //     },
-            //     body: JSON.stringify({ amount: totalAmount }), // Pass total amount
-            // });
-            // const { clientSecret } = await response.json();
-
             const response = await postData("/payments/create-payment-intent/", {
-                amount: totalAmount,
+                email  : email,
+                amount : totalAmount,
             });
             const { clientSecret } = response;
 
@@ -67,6 +60,20 @@ const CheckoutForm = ({ totalAmount }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+
+            <div>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="mt-2 mb-4 w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="example@example.com"
+                    required
+                />
+            </div>
+
             <div className="mb-4">
                 <CardElement options={{ hidePostalCode: true }} />
             </div>
