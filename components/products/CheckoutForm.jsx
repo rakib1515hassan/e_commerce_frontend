@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { toast } from 'react-toastify';
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
+import { toast } from 'react-toastify';
 import { postData } from '@/lib/axios';
 
 const CheckoutForm = ({ totalAmount }) => {
