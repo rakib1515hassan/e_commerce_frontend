@@ -4,9 +4,8 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
-
-// import FacebookLoginButton from '@/components/auth/FacebookLoginButton';
-// import GoogleLoginButton from '@/components/auth/GoogleLoginButton';
+import FacebookLoginButton from '@/components/auth/social/FacebookLoginButton';
+import GoogleLoginButton from '@/components/auth/social/GoogleLoginButton';
 
 
 
@@ -46,8 +45,8 @@ const LogingForm = () => {
                 <p className="text-sm text-gray-500 text-center mb-6">Please log in to your account</p>
 
                 <div className="space-y-3">
-                    {/* <GoogleLoginButton />
-                    <FacebookLoginButton /> */}
+                    <GoogleLoginButton />
+                    <FacebookLoginButton />
                 </div>
 
                 <div className="flex items-center my-6">
