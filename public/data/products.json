@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "Product 1",
+    "image": "/img/products/product_1.jpg",
+    "description": "This is a description of product 1.",
+    "price": "$25.99",
+    "category": "Electronics",
+    "rating": 4.5,
+    "availability": "In Stock",
+    "brand": "Brand A",
+    "color": "Black",
+    "weight": "1.2 kg"
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "image": "/img/products/product_2.jpg",
+    "description": "This is a description of product 2.",
+    "price": "$45.99",
+    "category": "Fashion",
+    "rating": 4.2,
+    "availability": "Out of Stock",
+    "brand": "Brand B",
+    "color": "Blue",
+    "weight": "0.5 kg"
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "image": "/img/products/product_3.jpg",
+    "description": "This is a description of product 3.",
+    "price": "$15.99",
+    "category": "Home Appliances",
+    "rating": 3.8,
+    "availability": "In Stock",
+    "brand": "Brand C",
+    "color": "White",
+    "weight": "2.0 kg"
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "image": "/img/products/product_4.jpg",
+    "description": "This is a description of product 4.",
+    "price": "$35.99",
+    "category": "Sports",
+    "rating": 4.0,
+    "availability": "In Stock",
+    "brand": "Brand D",
+    "color": "Red",
+    "weight": "0.8 kg"
+  }
+]
